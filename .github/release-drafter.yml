@@ -52,4 +52,4 @@ template: |
   $CHANGES
 
   ## Links
-  - [Submit bugs/feature requests](https://github.com/askb/packer-build-action/issues)
+  - [Submit bugs/feature requests](https://github.com/lfreleng-actions/packer-build-action/issues)
