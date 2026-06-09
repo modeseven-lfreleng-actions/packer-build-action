@@ -5,7 +5,7 @@ version = 1
 
 SPDX-PackageName = "packer-build-action"
 SPDX-PackageSupplier = "The Linux Foundation"
-SPDX-PackageDownloadLocation = "https://github.com/askb/packer-build-action"
+SPDX-PackageDownloadLocation = "https://github.com/lfreleng-actions/packer-build-action"
 
 [[annotations]]
 path = [
