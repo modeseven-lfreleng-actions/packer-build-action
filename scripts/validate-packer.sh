@@ -56,7 +56,7 @@ for template in $TEMPLATES; do
         echo -e "  ${GREEN}✓${NC} Init successful"
     else
         echo -e "  ${RED}✗${NC} Init failed"
-        ((FAILED++))
+        FAILED=$((FAILED + 1))
         continue
     fi
 
@@ -64,11 +64,11 @@ for template in $TEMPLATES; do
     echo "  Checking syntax..."
     if packer validate -syntax-only "$template" > /dev/null 2>&1; then
         echo -e "  ${GREEN}✓${NC} Syntax valid"
-        ((PASSED++))
+        PASSED=$((PASSED + 1))
     else
         echo -e "  ${RED}✗${NC} Syntax invalid"
         packer validate -syntax-only "$template" || true
-        ((FAILED++))
+        FAILED=$((FAILED + 1))
     fi
 
     echo ""

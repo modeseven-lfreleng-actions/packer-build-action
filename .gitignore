@@ -9,6 +9,10 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+*.egg-info/
+.coverage
+coverage.xml
+htmlcov/
 .tox/
 .vagrant/
 .venv/
@@ -35,3 +39,6 @@ id_rsa*
 bastion-logs/
 build-logs/
 logs/
+
+# uv lock file (not tracked for this action repo)
+uv.lock
